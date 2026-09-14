@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 18 - HTML</title>
+</head>
+<body>
+    <h1>Preferências do aluno.</h1>
+    <form action="cadastro.jsp" method="post">
+        <fieldset>
+            <legend>Cadastro</legend>
+            <div>
+                <label for="text">Nome:</label>
+                <input type="text" name="nomeTxt" id="nomeTxt" required placeholder="Fulano Silva">
+            </div>    
+            <br>
+            <div>
+                <label for="color">Cor favorita:</label>
+                <input type="color" name="corFav" id="corFav">
+            </div>
+            <br>
+            <div>
+                <label for="color">Disciplina de interesse:</label><br>
+                <input type="checkbox" name="chkDisciplinaInteresse" id="chkDisciplinaInteresse" value="1">Álgebra Linear e Geometria Analítica
+                <br>
+                <input type="checkbox" name="chkDisciplinaInteresse" id="chkDisciplinaInteresse" value="2">Banco de Dados II
+                <br>
+                <input type="checkbox" name="chkDisciplinaInteresse" id="chkDisciplinaInteresse" value="3">Desenvolvimento de Interfaces
+                <br>
+                <input type="checkbox" name="chkDisciplinaInteresse" id="chkDisciplinaInteresse" value="4">Engenharia de Requisitos
+                <br>
+                <input type="checkbox" name="chkDisciplinaInteresse" id="chkDisciplinaInteresse" value="5">Programação Orientada a Objetos (Java)
+                <br>
+
+            </div>    
+            <br>
+            <div>
+                <label for="radio">Turno Preferido:</label><br>
+                <input type="radio" name="rdTurnoFav" id="rdTurnoFav" value="1">Matutino
+                <br>
+                <input type="radio" name="rdTurnoFav" id="rdTurnoFav" value="2">Verspertino
+                <br>
+                <input type="radio" name="rdTurnoFav" id="rdTurnoFav" value="3">Noturno
+                <br>
+                </div>    
+            <br>
+            <div>
+                <label for="select">Curso Favorito:</label>
+                <select name="cursoFavorito" id="cursoFavorito">
+                    <option value="1">Análise e Desenvolvimento de Sistemas</option>
+                    <option value="2">Ciência da Computação</option>
+                    <option value="3">Engenharia da Computação</option>
+                    <option value="4">Engenharia de Software</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="range">Nível de Interesse em HTML:</label><br>
+                <input type="range" name="nivelInteresse" id="nivelInteresse" min="0" max="10" step="1" value="5">
+            </div>
+            
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
